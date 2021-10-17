@@ -44,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         i.putExtra("length",monthlyLength);
 
         //Check if the snackbar should be displayed
-        if (TextUtils.isEmpty(principleAmount) || TextUtils.isEmpty(monthlyInterest)|| TextUtils.isEmpty(monthlyLength))
-            startActivity(i);
-        else
+        if (TextUtils.isEmpty(principle.getText().toString()) || TextUtils.isEmpty(interest.getText().toString())|| TextUtils.isEmpty(length.getText().toString()))
             mySnackbar.show();
+        else
+            startActivity(i);
     }
 }
